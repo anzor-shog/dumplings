@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'dumplings',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ru',
     },
     meta: [
       { charset: 'utf-8' },
@@ -17,7 +17,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/styles/fonts.scss', '~/assets/styles/text.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -29,8 +29,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

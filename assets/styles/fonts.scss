@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Magistral';
+  src: local('Magistral'),
+    url('~/assets/fonts/Magistral-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: local('Inter-Regular'),
+    url('../fonts/Inter-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: local('Inter-SemiBold'),
+    url('../fonts/Inter-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
