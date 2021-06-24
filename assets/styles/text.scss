@@ -1,8 +1,32 @@
+@import './variables.scss';
+
+@media (min-width: $sm) {
+  .magistral-xxl {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+@media (min-width: $md) {
+  .magistral-xxl {
+    font-size: 46px;
+    line-height: 55px;
+  }
+}
+@media (min-width: $lg) {
+  .magistral-xxl {
+    font-size: 46px;
+    line-height: 55px;
+  }
+}
+@media (min-width: $xl) {
+  .magistral-xxl {
+    font-size: 66px;
+    line-height: 75px;
+  }
+}
 .magistral-xxl {
   font-family: Magistral;
-  font-size: 66px;
-  line-height: 75px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02%;
 }
 
 .magistral-xl {
@@ -46,7 +70,7 @@
 
 .inter-sm {
   font-family: Inter-SemiBold;
-  font-size: 1.4px;
+  font-size: 14px;
   line-height: 18px;
 }
 

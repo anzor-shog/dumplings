@@ -1,19 +1,22 @@
 <template>
   <div class="root">
-    <Header />
+    <!-- <Header /> -->
     <Title />
+    <About />
   </div>
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
+// import Header from '~/components/Header.vue'
 import Title from '~/components/Title.vue'
+import About from '~/components/About.vue'
 
 export default {
   name: 'Main',
   components: {
-    Header,
+    // Header,
     Title,
+    About,
   },
 }
 </script>
