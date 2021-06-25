@@ -1,9 +1,9 @@
 <template>
-  <b-row class="py-5">
-    <b-col lg="6" md="12" sm="12" class="d-lg-block d-sm-none">
+  <b-row class="py-5 px-0">
+    <b-col lg="6" sm="12" class="d-lg-block d-sm-none">
       <img src="/about.svg" class="w-100" />
     </b-col>
-    <b-col lg="6" md="10" sm="10" offset-lg="0" offset-sm="1">
+    <b-col lg="6" sm="10" offset-lg="0" offset-sm="1" class="px-0">
       <b-row class="h-100" align-v="center">
         <b-col lg="7">
           <p class="magistral-lg">О компании</p>
@@ -27,5 +27,3 @@ export default {
   name: 'About',
 }
 </script>
-
-<style lang="scss" scoped></style>

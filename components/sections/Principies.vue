@@ -1,9 +1,9 @@
 <template>
   <b-row class="py-5">
-    <b-col sm="10" offset-xl="2" offset-sm="1" class="py-5">
+    <b-col sm="10" offset-xl="2" offset-sm="1" class="py-5 px-0">
       <p class="magistral-lg">Принципы Foodelity</p>
     </b-col>
-    <b-col sm="10" offset-xl="2" offset-sm="1">
+    <b-col sm="10" offset-xl="2" offset-sm="1" class="px-0">
       <b-row>
         <template v-for="item of items">
           <b-col :key="item.title" xl="5" lg="6" class="px-3">
@@ -55,5 +55,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped></style>

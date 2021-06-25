@@ -3,13 +3,15 @@
     <Title />
     <About />
     <Principies />
+    <Products />
   </div>
 </template>
 
 <script>
-import Title from '~/components/Title.vue'
-import About from '~/components/About.vue'
-import Principies from '~/components/Principies.vue'
+import Title from '~/components/sections/Title.vue'
+import About from '~/components/sections/About.vue'
+import Principies from '~/components/sections/Principies.vue'
+import Products from '~/components/sections/Products.vue'
 
 export default {
   name: 'Main',
@@ -17,6 +19,7 @@ export default {
     Title,
     About,
     Principies,
+    Products,
   },
 }
 </script>
