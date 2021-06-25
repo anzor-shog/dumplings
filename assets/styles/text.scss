@@ -5,11 +5,28 @@
     font-size: 36px;
     line-height: 45px;
   }
+  .magistral-lg {
+    font-family: Magistral;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .inter-lg {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 @media (min-width: $md) {
   .magistral-xxl {
     font-size: 46px;
     line-height: 55px;
+  }
+  .magistral-lg {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .inter-lg {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 @media (min-width: $lg) {
@@ -58,8 +75,6 @@
 
 .inter-lg {
   font-family: Inter-Regular;
-  font-size: 18px;
-  line-height: 35px;
 }
 
 .inter-md {

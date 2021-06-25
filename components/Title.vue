@@ -1,8 +1,8 @@
 <template>
-  <div class="title">
+  <div class="title pb-5">
     <b-row>
       <b-col cols="12" class="p-0">
-        <img src="~/assets/images/title-image.svg" class="w-100 back-image" />
+        <img src="/title-image.svg" class="w-100 back-image" />
       </b-col>
     </b-row>
     <div class="title-content">
@@ -18,7 +18,7 @@
               offset-sm="0"
               class="pb-md-4"
             >
-              <img src="~/assets/images/logo.svg" class="logo-image" />
+              <img src="/logo.svg" class="logo-image" />
             </b-col>
             <b-col
               xl="6"
