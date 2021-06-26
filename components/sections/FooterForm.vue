@@ -109,7 +109,11 @@ export default {
   methods: {
     onSubmit(event) {
       event.preventDefault()
-      alert(JSON.stringify(this.form))
+      // this.$mail.send({
+      //   from: 'John Doe',
+      //   subject: 'Incredible',
+      //   text: 'This is an incredible test message',
+      // })
       this.form.name = ''
       this.form.email = ''
       this.form.comment = ''
