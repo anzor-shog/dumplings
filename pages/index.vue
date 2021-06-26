@@ -28,6 +28,26 @@ export default {
     Certificates,
     FooterForm,
   },
+  head: {
+    title: 'Foodelity',
+    meta: [
+      {
+        hid: 'пельмени',
+        name: 'пельмени',
+        content: 'пельмени',
+      },
+      {
+        hid: 'фуделити',
+        name: 'фуделити',
+        content: 'фуделити',
+      },
+      {
+        hid: 'foodelity',
+        name: 'foodelity',
+        content: 'foodelity',
+      },
+    ],
+  },
 }
 </script>
 
