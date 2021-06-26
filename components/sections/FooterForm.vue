@@ -54,10 +54,13 @@
         или звоните нам
       </p>
       <div class="icons-container mb-4">
-        <a href="https://www.facebook.com/" target="_blank">
+        <a
+          href="https://www.facebook.com/foodelityinstagram/?ref=nf&hc_ref=ARSgD8_tbzFqgNFRSZ8V2ewX0rD0V8N3-6WZhSr8qZxyxO2F5WiIUiu_WCefvq1O-Eg"
+          target="_blank"
+        >
           <img src="/facebook-icon.svg" />
         </a>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://www.instagram.com/foodelitymoscow/" target="_blank">
           <img src="/instagram-icon.svg" />
         </a>
       </div>
@@ -109,11 +112,7 @@ export default {
   methods: {
     onSubmit(event) {
       event.preventDefault()
-      // this.$mail.send({
-      //   from: 'John Doe',
-      //   subject: 'Incredible',
-      //   text: 'This is an incredible test message',
-      // })
+      // this.$axios.$post('https://formspree.io/f/mzbyvdeq', this.form)
       this.form.name = ''
       this.form.email = ''
       this.form.comment = ''

@@ -33,23 +33,10 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
-    [
-      'nuxt-mail',
-      {
-        message: {
-          to: 'anzor9657@gmail.com',
-        },
-        smtp: {
-          host: 'mail.support.foodelity',
-          port: 25,
-          auth: {
-            user: 'username',
-            pass: 'password',
-          },
-        },
-      },
-    ],
   ],
+  axios: {
+    // proxy: true
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
