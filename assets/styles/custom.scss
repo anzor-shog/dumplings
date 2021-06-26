@@ -9,3 +9,23 @@ $grid-breakpoints: (
 
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-vue/src/index.scss';
+
+.modal-content {
+  background-color: $dark-green;
+  height: 220px;
+  .modal-header {
+    border-bottom: none;
+    button {
+      color: #eaeaea;
+    }
+  }
+  .modal-body {
+    padding-top: 0;
+    p {
+      cursor: pointer;
+    }
+  }
+  a:hover {
+    border-bottom: none;
+  }
+}

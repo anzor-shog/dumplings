@@ -34,7 +34,7 @@
                   <nuxt-link
                     :key="title.id"
                     class="inter-md"
-                    :to="title.anchor"
+                    :to="{ path: '/', hash: title.hash }"
                     :alt="title.text"
                     :text="title.text"
                   >
@@ -43,6 +43,33 @@
                 </template>
               </div></b-col
             >
+            <div
+              v-b-modal.nav-modal
+              class="px-3 outline-none d-md-none d-sm-flex align-items-center"
+            >
+              <b-img
+                src="/navbar-icon.svg"
+                class="outline-none"
+                alt="navbar icon"
+              />
+            </div>
+            <b-modal id="nav-modal" hide-footer>
+              <div
+                class="
+                  d-flex
+                  flex-column
+                  align-items-center
+                  justify-content-center
+                  h-100
+                "
+              >
+                <template v-for="title of titles">
+                  <p :key="title.id" class="inter-md" @click="to(title)">
+                    {{ title.text }}
+                  </p>
+                </template>
+              </div>
+            </b-modal>
           </b-row>
         </b-col>
       </b-row>
@@ -71,12 +98,33 @@ export default {
   data() {
     return {
       titles: [
-        { id: 1, text: 'О компании', anchor: '#about' },
-        { id: 2, text: 'Принципы Foodelity', anchor: '#foodelity' },
-        { id: 3, text: 'Продукция', anchor: '#products' },
-        { id: 4, text: 'Свяжитесь с нами', anchor: '#contact' },
+        { id: 1, text: 'О компании', anchor: '#about', hash: 'about' },
+        {
+          id: 2,
+          text: 'Принципы Foodelity',
+          anchor: '#foodelity',
+          hash: 'foodelity',
+        },
+        { id: 3, text: 'Продукция', anchor: '#products', hash: 'products' },
+        {
+          id: 4,
+          text: 'Свяжитесь с нами',
+          anchor: '#contact',
+          hash: 'contact',
+        },
       ],
     }
+  },
+  methods: {
+    to(link) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: document.querySelector(link.anchor).offsetTop,
+          behavior: 'smooth',
+        })
+      }, 300)
+      this.$bvModal.hide('nav-modal')
+    },
   },
 }
 </script>

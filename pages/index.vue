@@ -37,5 +37,6 @@ export default {
   flex-direction: column;
   width: 100%;
   margin: 0;
+  overflow: hidden;
 }
 </style>

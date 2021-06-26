@@ -138,7 +138,8 @@ export default {
     padding: 60px 0;
   }
   form {
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     .field {
       background-color: #0a1214;
       border: none;
