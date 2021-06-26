@@ -1,25 +1,29 @@
 <template>
   <div class="root">
-    <Title />
-    <About />
-    <Principies />
-    <Products />
+    <title-menu />
+    <about />
+    <principies />
+    <products />
+    <certificates />
+    <div class="my-5" />
   </div>
 </template>
 
 <script>
-import Title from '~/components/sections/Title.vue'
+import TitleMenu from '~/components/sections/TitleMenu.vue'
 import About from '~/components/sections/About.vue'
 import Principies from '~/components/sections/Principies.vue'
 import Products from '~/components/sections/Products.vue'
+import Certificates from '~/components/sections/Certificates.vue'
 
 export default {
   name: 'Main',
   components: {
-    Title,
+    TitleMenu,
     About,
     Principies,
     Products,
+    Certificates,
   },
 }
 </script>

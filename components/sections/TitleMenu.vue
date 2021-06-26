@@ -67,7 +67,7 @@
 </template>
 <script>
 export default {
-  name: 'Title',
+  name: 'TitleMenu',
   data() {
     return {
       titles: [
