@@ -70,6 +70,7 @@ typings/
 
 # Nuxt generate
 dist
+foodelity.ru
 
 # vuepress build output
 .vuepress/dist
