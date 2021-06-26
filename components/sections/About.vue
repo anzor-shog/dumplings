@@ -1,5 +1,5 @@
 <template>
-  <b-row class="py-5 px-0">
+  <b-row id="about" class="py-5 px-0">
     <b-col lg="6" sm="12" class="d-lg-block d-sm-none">
       <img src="/about.svg" class="w-100" />
     </b-col>

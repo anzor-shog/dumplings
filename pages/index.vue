@@ -6,6 +6,7 @@
     <products />
     <certificates />
     <div class="my-5" />
+    <footer-form />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import About from '~/components/sections/About.vue'
 import Principies from '~/components/sections/Principies.vue'
 import Products from '~/components/sections/Products.vue'
 import Certificates from '~/components/sections/Certificates.vue'
+import FooterForm from '~/components/sections/FooterForm.vue'
 
 export default {
   name: 'Main',
@@ -24,6 +26,7 @@ export default {
     Principies,
     Products,
     Certificates,
+    FooterForm,
   },
 }
 </script>

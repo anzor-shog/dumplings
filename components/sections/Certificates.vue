@@ -18,8 +18,8 @@
       </p>
     </b-col>
     <b-col
-      xl="4"
-      lg="5"
+      xl="3"
+      lg="4"
       md="10"
       sm="10"
       offset-lg="0"
@@ -28,9 +28,9 @@
         d-flex
         align-items-center
         justify-content-between
-        pl-lg-5
-        px-sm-0
-        mb-lg-0 mb-sm-3
+        ml-lg-5
+        mb-sm-3
+        p-0
       "
     >
       <img v-for="icon of icons" :key="icon" :src="icon" />

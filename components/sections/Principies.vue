@@ -1,5 +1,5 @@
 <template>
-  <b-row class="py-5">
+  <b-row id="foodelity" class="py-5">
     <b-col sm="10" offset-xl="2" offset-sm="1" class="py-5 px-0">
       <p class="magistral-lg">Принципы Foodelity</p>
     </b-col>

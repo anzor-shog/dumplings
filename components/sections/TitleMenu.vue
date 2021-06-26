@@ -1,5 +1,5 @@
 <template>
-  <div class="title pb-5">
+  <div id="title" class="title pb-5">
     <b-row>
       <b-col cols="12" class="p-0">
         <img src="/title-image.svg" class="w-100 back-image" />
