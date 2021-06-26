@@ -58,10 +58,12 @@
           href="https://www.facebook.com/foodelityinstagram/?ref=nf&hc_ref=ARSgD8_tbzFqgNFRSZ8V2ewX0rD0V8N3-6WZhSr8qZxyxO2F5WiIUiu_WCefvq1O-Eg"
           target="_blank"
         >
-          <img src="/facebook-icon.svg" />
+          <img src="/facebook-icon.svg" class="inactive" />
+          <img src="/facebook-icon-active.svg" class="active" />
         </a>
         <a href="https://www.instagram.com/foodelitymoscow/" target="_blank">
-          <img src="/instagram-icon.svg" />
+          <img src="/instagram-icon.svg" class="inactive" />
+          <img src="/instagram-icon-active.svg" class="active" />
         </a>
       </div>
       <div>
@@ -169,6 +171,21 @@ export default {
     justify-content: space-between;
     width: 100px;
     height: 30px;
+    img.active {
+      display: none;
+    }
+    img.inactive {
+      display: block;
+    }
+    a:hover {
+      border: none;
+      img.active {
+        display: block;
+      }
+      img.inactive {
+        display: none;
+      }
+    }
   }
   .links-container {
     width: 500px;
