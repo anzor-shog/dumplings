@@ -84,9 +84,11 @@
           offset-md="1"
           offset-sm="1"
         >
-          <p class="magistral-xxl px-xl-2 px-lg-2 px-md-5">
-            Верность здоровому питанию
-          </p>
+          <transition name="title" mode="out-in">
+            <p v-if="show" class="magistral-xxl px-xl-2 px-lg-2 px-md-5">
+              Верность здоровому питанию
+            </p>
+          </transition>
         </b-col>
       </b-row>
     </div>
@@ -95,6 +97,7 @@
 <script>
 export default {
   name: 'TitleMenu',
+  transition: 'slide-bottom',
   data() {
     return {
       titles: [
@@ -113,7 +116,13 @@ export default {
           hash: 'contact',
         },
       ],
+      show: false,
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.show = true
+    }, 300)
   },
   methods: {
     to(link) {
@@ -192,5 +201,13 @@ export default {
       height: 40px;
     }
   }
+}
+.title-enter-active,
+.title-leave-active {
+  transition: transform 1s cubic-bezier(0, 1, 0.4, 1.2);
+}
+.title-enter,
+.title-leave-to {
+  transform: translateX(-100vw);
 }
 </style>
