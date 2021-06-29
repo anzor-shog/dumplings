@@ -4,15 +4,27 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'dumplings',
-    htmlAttrs: {
-      lang: 'ru',
-    },
+    title: 'Пельмени Халяль FOODELITY | 100% натурально | foodelity.ru',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Пельмени. Экономь время на готовке! Халяль. Cобственное производство. Свежие продукты. Сертифицированный продукт.',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'Foodelity. Пельмени. Экономь время на готовке! Халяль. Cобственное производство. Свежие продукты. Сертифицированный продукт.',
+      },
     ],
+    htmlAttrs: {
+      lang: 'ru',
+    },
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 

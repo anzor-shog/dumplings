@@ -7,6 +7,7 @@
     <certificates />
     <div class="my-5" />
     <footer-form />
+    <scroll-up />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import Principies from '~/components/sections/Principies.vue'
 import Products from '~/components/sections/Products.vue'
 import Certificates from '~/components/sections/Certificates.vue'
 import FooterForm from '~/components/sections/FooterForm.vue'
+import ScrollUp from '~/components/sections/ScrollUp.vue'
 
 export default {
   name: 'Main',
@@ -27,24 +29,22 @@ export default {
     Products,
     Certificates,
     FooterForm,
+    ScrollUp,
   },
   head: {
-    title: 'Foodelity',
+    title: 'Пельмени Халяль FOODELITY | 100% натурально | foodelity.ru',
     meta: [
       {
-        hid: 'пельмени',
-        name: 'пельмени',
-        content: 'пельмени',
+        hid: 'description',
+        name: 'description',
+        content:
+          'Пельмени. Экономь время на готовке! Халяль. Cобственное производство. Свежие продукты. Сертифицированный продукт.',
       },
       {
-        hid: 'фуделити',
-        name: 'фуделити',
-        content: 'фуделити',
-      },
-      {
-        hid: 'foodelity',
-        name: 'foodelity',
-        content: 'foodelity',
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'Foodelity. Пельмени. Экономь время на готовке! Халяль. Cобственное производство. Свежие продукты. Сертифицированный продукт.',
       },
     ],
   },
