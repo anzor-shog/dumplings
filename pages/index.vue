@@ -1,18 +1,16 @@
 <template>
   <div class="root" :class="{ hide }">
     <preview :hide="hide" />
-    <transition name="wrapper">
-      <section v-show="!hide" class="w-100 wrapper">
-        <title-menu />
-        <about />
-        <principies />
-        <products />
-        <certificates />
-        <div class="my-5" />
-        <footer-form />
-        <scroll-up />
-      </section>
-    </transition>
+    <section class="w-100 wrapper" :class="{ hide }">
+      <title-menu />
+      <about />
+      <principies />
+      <products />
+      <certificates />
+      <div class="my-5" />
+      <footer-form />
+      <scroll-up />
+    </section>
   </div>
 </template>
 
@@ -75,18 +73,15 @@ export default {
   width: 100%;
   margin: 0;
   overflow: hidden;
+  &.hide {
+    width: 100vw;
+    height: 100vh;
+  }
 }
-.hide {
-  width: 100vw;
-  height: 100vh;
-}
-
-.wrapper-enter-active,
-.wrapper-leave-active {
+.wrapper {
   transition: transform 1s;
-}
-.wrapper-enter,
-.wrapper-leave-to {
-  transform: translateY(100vh);
+  &.hide {
+    transform: translateY(100vh);
+  }
 }
 </style>
