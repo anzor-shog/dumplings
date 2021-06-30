@@ -1,16 +1,15 @@
 <template>
-  <div id="scroll-up-btn" class="scroll-up-btn" @click="scrollTop">
-    <b-icon-chevron-up font-scale="3"></b-icon-chevron-up>
+  <div
+    id="scroll-up-btn"
+    class="scroll-up-btn d-md-flex d-sm-none"
+    @click="scrollTop"
+  >
+    <img src="/up.svg" class="w-100" />
   </div>
 </template>
 <script>
-import { BIconChevronUp } from 'bootstrap-vue'
-
 export default {
   name: 'ScrollUp',
-  components: {
-    'b-icon-chevron-up': BIconChevronUp,
-  },
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
   },
@@ -38,16 +37,25 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '~/assets/styles/variables.scss';
+@media (min-width: $md) {
+  .scroll-up-btn {
+    right: 20px;
+    bottom: 150px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: $lg) {
+  .scroll-up-btn {
+    right: 60px;
+    bottom: 250px;
+    width: 100px;
+    height: 100px;
+  }
+}
 .scroll-up-btn {
   position: fixed;
-  right: 60px;
-  bottom: 60px;
-  width: 60px;
-  height: 60px;
-  background-color: $green;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #fff;
   border-radius: 50%;
   opacity: 0;
   visibility: hidden;
@@ -56,8 +64,8 @@ export default {
   &:hover {
     opacity: 1;
   }
-  svg {
-    color: #fff;
+  img {
+    object-fit: cover;
   }
 }
 .show {

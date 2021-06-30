@@ -42,7 +42,7 @@ export default {
             },
           ],
           bju: ['Белки 9 г', 'Жиры 15 г', 'Углеводы 26 г'],
-          calories: '280 кКкал, 750 г',
+          calories: '280 Ккал, 750 г',
         },
         {
           image: '/sabantui.svg',
@@ -61,7 +61,7 @@ export default {
             },
           ],
           bju: ['Белки 8,5 г', 'Жиры 11 г', 'Углеводы 28 г'],
-          calories: '250 кКкал, 750 г',
+          calories: '250 Ккал, 750 г',
         },
         {
           image: '/vostochnie.svg',
@@ -80,7 +80,7 @@ export default {
             },
           ],
           bju: ['Белки 9 г', 'Жиры 9 г', 'Углеводы 28 г'],
-          calories: '230 кКкал, 750 г',
+          calories: '230 Ккал, 750 г',
         },
       ],
     }
