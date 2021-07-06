@@ -2,8 +2,8 @@
   <transition name="preview" mode="out-in">
     <div v-if="hide" class="preview">
       <transition name="logo" mode="out-in">
-        <div v-if="show" class="img-container">
-          <img src="/logo.svg" />
+        <div v-if="show" class="img-container px-2">
+          <img src="/loader.svg" />
         </div>
       </transition>
     </div>
@@ -47,7 +47,7 @@ export default {
   .img-container {
     overflow: hidden;
     img {
-      width: 80vw;
+      width: 76vw;
     }
   }
 }
