@@ -64,7 +64,7 @@ export default {
   transition: all 2s;
   transition-delay: 0.3s;
   opacity: 1;
-  width: 77%;
+  width: 77.1%;
 }
 .logo-enter,
 .logo-leave-to {
