@@ -46,6 +46,7 @@ export default {
   justify-content: center;
   .img-container {
     overflow: hidden;
+    width: 77%;
     img {
       width: 76vw;
     }
@@ -64,11 +65,11 @@ export default {
   transition: all 2s;
   transition-delay: 0.3s;
   opacity: 1;
-  width: 77.1%;
+  width: 77% !important;
 }
 .logo-enter,
 .logo-leave-to {
   opacity: 0;
-  width: 15%;
+  width: 15% !important;
 }
 </style>
