@@ -8,6 +8,7 @@
       <products />
       <certificates />
       <div class="my-5" />
+      <upload />
       <footer-form />
       <scroll-up />
     </section>
@@ -23,6 +24,7 @@ import Products from '~/components/sections/Products.vue'
 import Certificates from '~/components/sections/Certificates.vue'
 import FooterForm from '~/components/sections/FooterForm.vue'
 import ScrollUp from '~/components/sections/ScrollUp.vue'
+import Upload from '~/components/sections/Upload.vue'
 
 export default {
   name: 'Main',
@@ -35,6 +37,7 @@ export default {
     Certificates,
     FooterForm,
     ScrollUp,
+    Upload,
   },
   data() {
     return {
