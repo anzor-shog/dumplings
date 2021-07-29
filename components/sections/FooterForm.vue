@@ -106,8 +106,9 @@ export default {
       links: [
         { id: 1, text: 'Главная', anchor: '#title' },
         { id: 2, text: 'О компании', anchor: '#about' },
-        { id: 3, text: 'Принципы Foodelity', anchor: '#foodelity' },
+        { id: 3, text: 'Принципы', anchor: '#foodelity' },
         { id: 4, text: 'Продукция', anchor: '#products' },
+        { id: 5, text: 'Доставка', anchor: '#upload' },
       ],
     }
   },

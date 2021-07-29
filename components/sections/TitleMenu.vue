@@ -101,14 +101,15 @@ export default {
         { id: 1, text: 'О компании', anchor: '#about', hash: 'about' },
         {
           id: 2,
-          text: 'Принципы Foodelity',
+          text: 'Принципы',
           anchor: '#foodelity',
           hash: 'foodelity',
         },
         { id: 3, text: 'Продукция', anchor: '#products', hash: 'products' },
+        { id: 4, text: 'Доставка', anchor: '#upload', hash: 'upload' },
         {
-          id: 4,
-          text: 'Свяжитесь с нами',
+          id: 5,
+          text: 'Обратная связь',
           anchor: '#contact',
           hash: 'contact',
         },
